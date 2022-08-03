@@ -1,0 +1,57 @@
+" enable plugins
+:set easymotion
+:set which-key
+:set NERDTree
+
+" enable relative numbers
+:set relativenumber
+:set number
+
+" disable which-key timeout
+:set notimeout
+
+let mapleader = " "
+let g:WhichKeyDesc_easymotion = "<Space><Space> Easy motion"
+
+" ------------------------------
+" Run and debug
+" ------------------------------
+:map <leader>d <Action>(ContextDebug)
+:map <leader>r <Action>(ContextRun)
+let g:WhichKeyDesc_debug = "<Space>d Debug"
+let g:WhichKeyDesc_run   = "<Space>r Run"
+" ------------------------------
+
+" ------------------------------
+" go to ...
+" ------------------------------
+let g:WhichKeyDesc_goto = "<Space>g go to ..."
+" implementation
+map <leader>gi <Action>(GotoImplementation)
+let g:WhichKeyDesc_goto_impl = "<Space>gi go to implementation"
+" ------------------------------
+
+" ------------------------------
+" close tabs
+" ------------------------------
+let g:WhichKeyDesc_close = "<Space>c close ..."
+let g:WhichKeyDesc_close_tabs = "<Space>ct tabs ..."
+map <leader>ctl <Action>(CloseAllToTheLeft)
+let g:WhichKeyDesc_close_tabs_left = "<Space>ctl close all tabs to the left"
+map <leader>ctr <Action>(CloseAllToTheRight)
+let g:WhichKeyDesc_close_tabs_right = "<Space>ctr close all tabs to the right"
+map <leader>cta <Action>(CloseAllEditorsButActive)
+let g:WhichKeyDesc_close_tabs_all = "<Space>cta close all tabs but active"
+" ------------------------------
+
+" ------------------------------
+" files ...
+" ------------------------------
+map <leader>fo :NERDTree<CR>
+map <leader>fc :NERDTreeClose<CR>
+map <leader>ff :NERDTreeFind<CR>
+let g:WhichKeyDesc_files_structure = "<Space>f files structure"
+let g:WhichKeyDesc_files_structure_open = "<Space>fo open files structure"
+let g:WhichKeyDesc_files_structure_close = "<Space>fc close files structure"
+let g:WhichKeyDesc_files_structure_find = "<Space>ff find current file"
+" ------------------------------
