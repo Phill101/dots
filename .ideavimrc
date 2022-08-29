@@ -63,3 +63,8 @@ let g:WhichKeyDesc_files_structure_open = "<Space>fo open files structure"
 let g:WhichKeyDesc_files_structure_close = "<Space>fc close files structure"
 let g:WhichKeyDesc_files_structure_find = "<Space>ff find current file"
 " ------------------------------
+" scala ...
+" ------------------------------
+map <leader>st <Action>(Scala.TypeInfo)
+let g:WhichKeyDesc_scala = "<Space>s scala"
+let g:WhichKeyDesc_scala_type_info = "<Space>st type info"
