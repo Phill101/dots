@@ -24,8 +24,8 @@ let g:WhichKeyDesc_easymotion = "<Space><Space> Easy motion"
 " ------------------------------
 " Run and debug
 " ------------------------------
-:map <leader>d <Action>(ContextDebug)
-:map <leader>r <Action>(ContextRun)
+:map <leader>d <Action>(DebugClass)
+:map <leader>r <Action>(RunClass)
 let g:WhichKeyDesc_debug = "<Space>d Debug"
 let g:WhichKeyDesc_run   = "<Space>r Run"
 " ------------------------------
